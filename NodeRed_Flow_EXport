@@ -1,0 +1,2209 @@
+[
+    {
+        "id": "a2c7ad09.6d318",
+        "type": "tab",
+        "label": "Sniffer Sensor Update",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "9ea60293.d0c54",
+        "type": "tab",
+        "label": "UI",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1fad646f.2a242c",
+        "type": "tab",
+        "label": "API",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "98918ed6.e64e3",
+        "type": "tab",
+        "label": "Misc (saved)",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "223eff8a.f2252",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "MQTT-Dashboard public demo broker",
+        "broker": "iot.eclipse.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "d84c1aeb.90eb78",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "Public Internet",
+        "broker": "iot.eclipse.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "4ac86962.2b19a8",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "Localhost (Misquitto)",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "5de5eb9f.65bc94",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "WIDS Console",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "307ac732.406b98",
+        "type": "ui_group",
+        "z": "",
+        "name": "Device List",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "aec612d7.88b2f",
+        "type": "ui_group",
+        "z": "",
+        "name": "Device Info",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "56ef7391.50e28c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperatuur Node",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "12"
+    },
+    {
+        "id": "7708f71e.cccbb8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Sensors",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fe084ffd.6ec0e",
+        "type": "ui_group",
+        "z": "",
+        "name": "Filters",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "c84f961c.56fe28",
+        "type": "ui_group",
+        "z": "",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "963edbe7.12c018",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7e1941af.4dd8f",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Devices",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c3e02058.58c74",
+        "type": "ui_group",
+        "z": "",
+        "name": "Last Scan",
+        "tab": "7e1941af.4dd8f",
+        "order": 6,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "1ba31beb.36dbd4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Selected Device",
+        "tab": "7e1941af.4dd8f",
+        "order": 5,
+        "disp": true,
+        "width": "5",
+        "collapse": true
+    },
+    {
+        "id": "39c5f3fa.7d1cdc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "21748551.68486a",
+        "type": "twilio-api",
+        "z": "",
+        "name": "My personal Twilio",
+        "sid": "AC6d0b852edb432252b8096f292f7b82c9",
+        "from": "+18022770763"
+    },
+    {
+        "id": "d784f110.ce8bb",
+        "type": "ui_group",
+        "z": "",
+        "name": "Device Graph",
+        "tab": "7708f71e.cccbb8",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": true
+    },
+    {
+        "id": "d442acc1.1ae28",
+        "type": "ui_group",
+        "z": "",
+        "name": "Sensor List",
+        "tab": "7708f71e.cccbb8",
+        "order": 2,
+        "disp": true,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "3e72be74.f0aa52",
+        "type": "ui_group",
+        "z": "",
+        "name": "Sensor properties",
+        "tab": "7708f71e.cccbb8",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7edc0d9b.696434",
+        "type": "ui_group",
+        "z": "",
+        "name": "Settings",
+        "tab": "7e1941af.4dd8f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f79f2e75.6ccfb",
+        "type": "ui_group",
+        "z": "",
+        "name": "One dimension Array",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "802c5a7f.ba1558",
+        "type": "ui_group",
+        "z": "",
+        "name": "Trusted Devices",
+        "tab": "7e1941af.4dd8f",
+        "order": 3,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "96004e39.a95bc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Other Devices",
+        "tab": "7e1941af.4dd8f",
+        "order": 4,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "ef4a7018.d6a6a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Alerts",
+        "tab": "7e1941af.4dd8f",
+        "order": 2,
+        "disp": false,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "419a7394.d25b4c",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "Laptop",
+        "broker": "192.168.42.17",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "ac151f51.11112",
+        "type": "mqtt in",
+        "z": "a2c7ad09.6d318",
+        "name": "",
+        "topic": "Sniffer/",
+        "qos": "0",
+        "broker": "4ac86962.2b19a8",
+        "x": 97,
+        "y": 58.00000810623169,
+        "wires": [
+            [
+                "d9316f72.677f8",
+                "59af8495.8e2ffc",
+                "1b379b52.4ec755"
+            ]
+        ]
+    },
+    {
+        "id": "d9316f72.677f8",
+        "type": "json",
+        "z": "a2c7ad09.6d318",
+        "name": "json",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 102,
+        "y": 125.9999942779541,
+        "wires": [
+            [
+                "4997485e.b41af8",
+                "362e8642.899f8a",
+                "380816c.41dd0ea"
+            ]
+        ]
+    },
+    {
+        "id": "4997485e.b41af8",
+        "type": "function",
+        "z": "a2c7ad09.6d318",
+        "name": "updateSensor",
+        "func": "sensors = global.get(\"sensorsArray\") || [];\nnamedSensors = global.get(\"namedSensors\") || [];\n\nsensorID = msg.payload.SensorID;\n\nif(!sensors.find(function(sensor, index){\n        if (sensor.id == sensorID) {\n            sensors[index].lastSeen = Date.now();\n            sensors[index].name = namedSensors[sensorID] || \"\";\n            sensors[index].deviceCount = msg.payload.nDevices;\n            return true;\n        } else {\n            return false;\n        }\n    })) { // If sensor not found in global sensors list, then add to list\n\n    newSensor = {};\n    newSensor.name = namedSensors[sensorID] || \"\";\n    newSensor.id = sensorID;\n    newSensor.lastSeen = Date.now();\n    newSensor.deviceCount = msg.payload.nDevices;\n    sensors.push(newSensor);\n}\n\nmsg.payload = sensors;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 307.3333511352539,
+        "y": 334.00001859664917,
+        "wires": [
+            [
+                "ff367a22.185158"
+            ]
+        ]
+    },
+    {
+        "id": "ff367a22.185158",
+        "type": "change",
+        "z": "a2c7ad09.6d318",
+        "name": "Update Active Sensors",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sensorsArray",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940.3333511352539,
+        "y": 332.00001859664917,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "380816c.41dd0ea",
+        "type": "function",
+        "z": "a2c7ad09.6d318",
+        "name": "updateLinks",
+        "func": "globalLinks = global.get(\"allLinks\") || [];\nnamedDevices = global.get(\"namedDevices\") || [];\n\nreportedLinks = []\nmsg.payload.devices.forEach(function(deviceLink) {\n    reportedLink = {};\n    reportedLink.dstMAC = deviceLink.MAC;\n    reportedLink.channel = deviceLink.channel;\n    reportedLink.srcSensor = msg.payload.SensorID;\n    reportedLink.distance = deviceLink.RSSI;\n\n    reportedLinks.push(reportedLink);\n});\n\n\nreportedLinks.forEach(function(newLink) {\n    if(!globalLinks.find(function(globalLink, index) {\n        if ((globalLink.srcSensor == newLink.srcSensor) && \n            (globalLink.dstMAC == newLink.dstMAC)) {\n            globalLinks[index].distance = newLink.distance;\n            globalLinks[index].channel = newLink.channel;\n            globalLinks[index].lastActiveTime = Date.now();\n            return true;        \n        } else {\n            return false;\n        }\n    // If find function doesn't find matching link,\n    // Then push new link to globalList\n    })) { \n        newLink.lastActiveTime = Date.now();\n        globalLinks.push(newLink); \n    }\n});\n\nlastScan = {};\nlastScan.payload = reportedLinks;\nlastScan.scanTime = Date.now();\nlastScan.srcSensor = msg.payload.SensorID;\nlastScan.sensorName = namedDevices[msg.payload.SensorID] || '';\n\nmsg.payload = globalLinks;\nreturn [msg, lastScan];",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 299.3333053588867,
+        "y": 276.9999966621399,
+        "wires": [
+            [
+                "2eb153e9.4c95cc"
+            ],
+            [
+                "b8a4a1da.e9307"
+            ]
+        ]
+    },
+    {
+        "id": "a35c9483.f633c8",
+        "type": "change",
+        "z": "a2c7ad09.6d318",
+        "name": "set allLinks",
+        "rules": [
+            {
+                "t": "set",
+                "p": "allLinks",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900.1111831665039,
+        "y": 240.1110873222351,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a929c47c.4f3018",
+        "type": "ui_template",
+        "z": "9ea60293.d0c54",
+        "group": "7edc0d9b.696434",
+        "name": "Clock Toolbar",
+        "order": 4,
+        "width": "1",
+        "height": "1",
+        "format": "<script id=\"titleScript\" type=\"text/javascript\">\n    $('#clock').remove();\n    var toolbar = $('.md-toolbar-tools');\n    var div = $('<div/>');\n    var p = $('<p/ id=\"clock\">');\n    \n    $('#titleScript').parent().hide();\n    div.append(p);\n    div[0].style.margin = '5px 5px 5px auto';\n    toolbar.append(div);\n\n    function displayTitle(lh) {\n        p.text(lh); \n    }\n    \n    function upTime() {\n        var d = new Date();\n        p.text(d.toLocaleString());\n    }\n\n    \n\n    // Watch the payload and update the title\n    (function(scope) {\n        scope.$watch('msg.payload', function(data) {\n            displayTitle(data);\n        });\n        setInterval(upTime,1000);\n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "templateScope": "local",
+        "x": 1627.333351135254,
+        "y": 23.285704851150513,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e75cb57.230b84",
+        "type": "inject",
+        "z": "9ea60293.d0c54",
+        "name": "",
+        "topic": "",
+        "payload": "Clock",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": ".1",
+        "x": 1468.8333740234375,
+        "y": 23.28570556640625,
+        "wires": [
+            [
+                "a929c47c.4f3018"
+            ]
+        ]
+    },
+    {
+        "id": "1c4056f1.700539",
+        "type": "ui_list",
+        "z": "9ea60293.d0c54",
+        "group": "802c5a7f.ba1558",
+        "name": "Trusted",
+        "order": 1,
+        "width": "4",
+        "height": "8",
+        "lineType": "one",
+        "actionType": "click",
+        "allowHTML": true,
+        "x": 734.7857780456543,
+        "y": 148.00002670288086,
+        "wires": [
+            [
+                "39d70f61.2cbad"
+            ]
+        ]
+    },
+    {
+        "id": "b73765e0.4314c8",
+        "type": "function",
+        "z": "9ea60293.d0c54",
+        "name": "Get device List",
+        "func": "namedDevices = global.get(\"namedDevices\") || [];\ntrustedDevices = global.get(\"trustedDevices\") || [];\nallLinks = global.get(\"allLinks\") || [];\n\ndevices = {};\nallLinks.forEach(function(link) {\n    deviceInfo = {};\n    deviceInfo.MAC = link.dstMAC;\n    deviceInfo.channel = link.channel;\n    deviceInfo.RSSI = link.distance;\n    deviceInfo.trusted = trustedDevices[link.dstMAC] || false;\n    deviceInfo.title = namedDevices[link.dstMAC] || link.dstMAC;\n    devices[link.dstMAC] = deviceInfo;\n});\n\nallDeviceCount = 0;\ntrustedDeviceCount = 0;\ntrustedOptions = [];\notherOptions = [];\n\nfor (var deviceID in devices) {\n    device = devices[deviceID];\n    allDeviceCount++;\n    \n    if(device.trusted) {\n        trustedDeviceCount++;\n        trustedOptions.push(device);\n    } else\n        otherOptions.push(device);\n}\n\nmsgDeviceCounts = {};\nmsgDeviceCounts.trustedCount = trustedDeviceCount;\nmsgDeviceCounts.allCount = allDeviceCount;\n\nmsgTrustedDevices = {payload: trustedOptions};\nmsgOtherDevices = {payload: otherOptions};\n\nmsg.payload = [msgDeviceCounts, msgTrustedDevices, msgOtherDevices];\n//return msg;\n\nreturn [msgDeviceCounts, msgTrustedDevices, msgOtherDevices];",
+        "outputs": 3,
+        "noerr": 0,
+        "x": 378.28570556640625,
+        "y": 136.75002479553223,
+        "wires": [
+            [
+                "c07544ac.096e98",
+                "e9f62c1f.f1634",
+                "aec4d0fd.4386f"
+            ],
+            [
+                "1c4056f1.700539"
+            ],
+            [
+                "c96a6f18.ae067"
+            ]
+        ]
+    },
+    {
+        "id": "1ece76f2.664dd9",
+        "type": "function",
+        "z": "9ea60293.d0c54",
+        "name": "Get selected device info",
+        "func": "var allLinks = global.get(\"allLinks\") || [];\nvar namedDevices = global.get(\"namedDevices\") || {};\nvar trustedDevices = global.get(\"trustedDevices\") || [];\n\nvar deviceInfo = {};\ndeviceInfo.MAC = flow.get(\"selectedDevice\");\n\ndeviceInfo.name = namedDevices[deviceInfo.MAC] || '';\ndeviceInfo.trusted = trustedDevices[deviceInfo.MAC] || false;\ndeviceInfo.links = allLinks.filter(link => link.dstMAC == deviceInfo.MAC);\n\nvar lastLink = deviceInfo.links.slice(-1)[0];\nif(lastLink !== undefined) {\n    deviceInfo.lastRSSI = lastLink.distance;\n    deviceInfo.lastSeenSensor = lastLink.srcSensor;\n    \n    if(namedDevices[lastLink.srcSensor]) {\n        deviceInfo.sensorHasName = true;\n        deviceInfo.lastSeenSensorName = namedDevices[lastLink.srcSensor];\n    }\n    \n    deviceInfo.lastSeenTime = lastLink.lastActiveTime;\n}\n\nvar outputMessages = []; \noutputMessages.push({payload: deviceInfo});\noutputMessages.push({payload: deviceInfo.name});\noutputMessages.push({payload: deviceInfo.trusted});\n\nreturn outputMessages;",
+        "outputs": 3,
+        "noerr": 0,
+        "x": 407.1428909301758,
+        "y": 297.6072111129761,
+        "wires": [
+            [
+                "948654d3.02bdd8"
+            ],
+            [
+                "dc1f1472.b880e8"
+            ],
+            [
+                "e0510da5.13603"
+            ]
+        ]
+    },
+    {
+        "id": "592f70fe.5c2ce",
+        "type": "function",
+        "z": "9ea60293.d0c54",
+        "name": "set selectedDevice name",
+        "func": "namedDevices = global.get(\"namedDevices\");\nnamedDevices[flow.get(\"selectedDevice\")] = msg.payload;\n\nglobal.set(\"namedDevices\", namedDevices);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 993.9645309448242,
+        "y": 333.1430444717407,
+        "wires": [
+            [
+                "c0ba9384.ce5f6"
+            ]
+        ]
+    },
+    {
+        "id": "e0510da5.13603",
+        "type": "ui_switch",
+        "z": "9ea60293.d0c54",
+        "name": "Device trusted",
+        "label": "Trusted",
+        "tooltip": "Do you know / \"trust\" this device?",
+        "group": "1ba31beb.36dbd4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 748.9645795822144,
+        "y": 370.14302641153336,
+        "wires": [
+            [
+                "80cd6072.f27c7"
+            ]
+        ]
+    },
+    {
+        "id": "dc1f1472.b880e8",
+        "type": "ui_text_input",
+        "z": "9ea60293.d0c54",
+        "name": "Device Name",
+        "label": "Known name",
+        "tooltip": "Update device name",
+        "group": "1ba31beb.36dbd4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 749.9645795822144,
+        "y": 333.14302641153336,
+        "wires": [
+            [
+                "592f70fe.5c2ce"
+            ]
+        ]
+    },
+    {
+        "id": "39d70f61.2cbad",
+        "type": "change",
+        "z": "9ea60293.d0c54",
+        "name": "set flow.selectedDevice",
+        "rules": [
+            {
+                "t": "set",
+                "p": "selectedDevice",
+                "pt": "flow",
+                "to": "payload.MAC",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 972.5358276367188,
+        "y": 168.50005912780762,
+        "wires": [
+            [
+                "c0ba9384.ce5f6"
+            ]
+        ]
+    },
+    {
+        "id": "80cd6072.f27c7",
+        "type": "function",
+        "z": "9ea60293.d0c54",
+        "name": "set selectedDevice trusted/untrusted",
+        "func": "trustedDevices = global.get(\"trustedDevices\") || {};\ntrustedDevices[flow.get(\"selectedDevice\")] = msg.payload;\n\nglobal.set(\"trustedDevices\", trustedDevices);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1032.9645309448242,
+        "y": 370.142991065979,
+        "wires": [
+            [
+                "c0ba9384.ce5f6"
+            ]
+        ]
+    },
+    {
+        "id": "c96a6f18.ae067",
+        "type": "ui_list",
+        "z": "9ea60293.d0c54",
+        "group": "96004e39.a95bc",
+        "name": "Other",
+        "order": 1,
+        "width": "4",
+        "height": "8",
+        "lineType": "one",
+        "actionType": "click",
+        "allowHTML": true,
+        "x": 724.2857246398926,
+        "y": 186,
+        "wires": [
+            [
+                "39d70f61.2cbad"
+            ]
+        ]
+    },
+    {
+        "id": "e9f62c1f.f1634",
+        "type": "ui_button",
+        "z": "9ea60293.d0c54",
+        "name": "",
+        "group": "96004e39.a95bc",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Trust All",
+        "tooltip": "Set all learned devices to \"Trusted\"",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "x": 736.2857055664062,
+        "y": 71.99999809265137,
+        "wires": [
+            [
+                "768713d7.57a09c"
+            ]
+        ]
+    },
+    {
+        "id": "aec4d0fd.4386f",
+        "type": "ui_button",
+        "z": "9ea60293.d0c54",
+        "name": "",
+        "group": "802c5a7f.ba1558",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Forget All",
+        "tooltip": "Remove all \"Trusted\" devices",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "",
+        "x": 737.2857055664062,
+        "y": 110.99999809265137,
+        "wires": [
+            [
+                "768713d7.57a09c"
+            ]
+        ]
+    },
+    {
+        "id": "c07544ac.096e98",
+        "type": "ui_text",
+        "z": "9ea60293.d0c54",
+        "group": "c3e02058.58c74",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Device Count",
+        "label": "Trusted Devices: ",
+        "format": "{{msg.trustedCount}} / {{msg.allCount}}",
+        "layout": "row-left",
+        "x": 756.2857055664062,
+        "y": 33.99999809265137,
+        "wires": []
+    },
+    {
+        "id": "768713d7.57a09c",
+        "type": "function",
+        "z": "9ea60293.d0c54",
+        "name": "Set all devices Trusted (True/False)",
+        "func": "allLinks = global.get(\"allLinks\") || [];\ntrustedDevices = global.get(\"trustedDevices\") || {};\n\nallLinks.forEach(function(link) {\n    trustedDevices[link.dstMAC] = msg.payload;\n});\n\nglobal.set(\"trustedDevices\", trustedDevices);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 987.2857055664062,
+        "y": 94.99999809265137,
+        "wires": [
+            [
+                "c0ba9384.ce5f6"
+            ]
+        ]
+    },
+    {
+        "id": "b254b20e.d831f",
+        "type": "ui_switch",
+        "z": "9ea60293.d0c54",
+        "name": "triggerAlerts",
+        "label": "Trigger Alerts",
+        "tooltip": "Enable triggering SMS alerts when new devices are detected",
+        "group": "7edc0d9b.696434",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 713.8142585754395,
+        "y": 589.457181930542,
+        "wires": [
+            [
+                "141f560a.c87e5a"
+            ]
+        ]
+    },
+    {
+        "id": "141f560a.c87e5a",
+        "type": "change",
+        "z": "9ea60293.d0c54",
+        "name": "settings.triggerAlerts",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.triggerAlerts",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 922.8571166992188,
+        "y": 588.857177734375,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6bafd4f.65201",
+        "type": "change",
+        "z": "9ea60293.d0c54",
+        "name": "settings.logWindow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.logWindow",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 923.7142944335938,
+        "y": 487.85712242126465,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "499467b6.66a278",
+        "type": "function",
+        "z": "9ea60293.d0c54",
+        "name": "return msg",
+        "func": "settings = msg.payload;\nglobal.set(\"settings\", settings);\n\noutMsgs = [];\noutMsgs.push({payload: settings.logWindow || 48});\noutMsgs.push({payload: settings.enableLogging || 1});\noutMsgs.push({payload: settings.triggerAlerts || 0});\n\nreturn outMsgs;",
+        "outputs": 3,
+        "noerr": 0,
+        "x": 364.7142791748047,
+        "y": 529.8571166992188,
+        "wires": [
+            [
+                "3f5f3d91.f1aed2"
+            ],
+            [
+                "f21c508c.0759f"
+            ],
+            [
+                "b254b20e.d831f"
+            ]
+        ]
+    },
+    {
+        "id": "f21c508c.0759f",
+        "type": "ui_switch",
+        "z": "9ea60293.d0c54",
+        "name": "enableLogging",
+        "label": "Log devices",
+        "tooltip": "Enable logging seen devices",
+        "group": "7edc0d9b.696434",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 726.5714416503906,
+        "y": 544.285717010498,
+        "wires": [
+            [
+                "7b7e50fd.7ad3f"
+            ]
+        ]
+    },
+    {
+        "id": "7b7e50fd.7ad3f",
+        "type": "change",
+        "z": "9ea60293.d0c54",
+        "name": "settings.enableLogging",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.enableLogging",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 939.9000244140625,
+        "y": 543.6857433319092,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee16f397.c5604",
+        "type": "http in",
+        "z": "98918ed6.e64e3",
+        "name": "Request for Graph (/graph)",
+        "url": "/graph",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 184.2857208251953,
+        "y": 468.5714416503906,
+        "wires": [
+            [
+                "62434c81.034394"
+            ]
+        ]
+    },
+    {
+        "id": "62434c81.034394",
+        "type": "template",
+        "z": "98918ed6.e64e3",
+        "name": "graphChart.html",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "plain",
+        "template": "<style>\n#cy {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0px;\n    left: 0px;\n}\n</style>\n<script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.4.2/cytoscape.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/cytoscape-cose-bilkent@4.0.0/cytoscape-cose-bilkent.min.js\"></script>\n<script>\nvar linkTimeout = 5; // Links inactive after 5 minutes of silence \nvar ignoreRandomizedMacs = 1;\nvar onlyGraphKnownDevices = 1;\nvar url = window.location.protocol + '//' + window.location.host +'/api/get/graphNodes';\nconsole.log(url);\n$.getJSON((url), function(graphInfo) {\n    buildGraph(graphInfo);\n});\n\nfunction buildGraph(activeNodes) {\n  var cy = cytoscape({\n    container: document.getElementById('cy'), // container to render in\n    elements: activeNodes,\n    style: [ // the stylesheet for the graph\n      {\n        selector: 'node',\n        style: {\n          'background-color': 'red',\n          'label': 'data(name)',\n          'width': '2',\n          'height': '2',\n          'font-size': '3px'\n        }\n      },\n      {\n        selector: 'node[isSensor=1]',\n        style: {\n          'background-color': 'green',\n          'label': 'data(name)',\n          'width': '5',\n          'height': '5',\n          'font-size': '3px'\n        }\n      },\n      {\n        selector: 'edge',\n        style: {\n            'label': 'data(distance)',\n            'font-size': '2px',\n            'width': 1,\n        }\n      }\n    ],\n    layout: {\n      name: 'cose-bilkent',\n      nodeRepulsion: 4500,\n      edgeLength: function( edge ){ return edge.data.distance; }\n    }\n  });\n  console.log( cy.elements().jsons() );\n}\n</script>\n\n<div id=\"cy\"></div>\n",
+        "output": "str",
+        "x": 353.2857131958008,
+        "y": 523.2857174873352,
+        "wires": [
+            [
+                "17356137.a9fabf"
+            ]
+        ]
+    },
+    {
+        "id": "17356137.a9fabf",
+        "type": "http response",
+        "z": "98918ed6.e64e3",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 459.00005531311035,
+        "y": 473.2857370376587,
+        "wires": []
+    },
+    {
+        "id": "b8a4a1da.e9307",
+        "type": "ui_template",
+        "z": "a2c7ad09.6d318",
+        "group": "c3e02058.58c74",
+        "name": "Last reported links table",
+        "order": 1,
+        "width": "8",
+        "height": "8",
+        "format": "<span><b>Time:</b> {{msg.scanTime | date:'dd.MM.yyyy HH:mm:ss'}}</span><br>\n<span><b>Sensor:</b> {{msg.srcSensor}} ({{msg.sensorName}})</span><br>\n\n<table border=\"1\">\n    <tr>\n        <th>Device</th>\n        <th>Channel</th>\n        <th>Distance</th>\n    </tr>\n    <tr ng-repeat=\"(i, link) in msg.payload\">\n        <td>{{link.dstMAC}}</td>\n        <td>{{link.channel}}</td>\n        <td>{{link.distance}}</td>\n    </tr>\n</table><br>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 568.3333549499512,
+        "y": 295.00003385543823,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "948654d3.02bdd8",
+        "type": "ui_template",
+        "z": "9ea60293.d0c54",
+        "group": "1ba31beb.36dbd4",
+        "name": "Device Properties",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "format": "<div>\n<b><span id=\"macAddress\">{{msg.payload.MAC}}</span></b><br>\n<!--Name: {{msg.payload.name}}-->\nRSSI: {{msg.payload.lastRSSI}}<br>\nLast Seen By: {{msg.payload.lastSeenSensor}}<br>\nLast Logged: {{msg.payload.lastSeenTime | date:'short'}}<br>\n</div><br>",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 763,
+        "y": 289.99999809265137,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc7396c8.d865f8",
+        "type": "ui_template",
+        "z": "98918ed6.e64e3",
+        "group": "1ba31beb.36dbd4",
+        "name": "Links Table",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "format": "<table border=\"1\">\n    <tr>\n        <th>Sensor</th>\n        <th>Channel</th>\n        <th>Distance</th>\n        <th>Last Active</th>\n    </tr>\n    <tr ng-repeat=\"(i, link) in msg.payload.links\">\n        <td>{{link.srcSensor}} ({{link.sensorName}})</td>\n        <td>{{link.channel}}</td>\n        <td>{{link.distance}}</td>\n        <td>{{link.lastActiveTime | date:'medium'}}</td>\n    </tr>\n</table><br>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "templateScope": "local",
+        "x": 193,
+        "y": 236,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f5f3d91.f1aed2",
+        "type": "ui_numeric",
+        "z": "9ea60293.d0c54",
+        "name": "Log Duration",
+        "label": "Log Duration",
+        "tooltip": "How long should detected devices be kept in the device log",
+        "group": "7edc0d9b.696434",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}} Hours",
+        "min": ".1",
+        "max": "48",
+        "step": "0.1",
+        "x": 721.5,
+        "y": 489.0000057220459,
+        "wires": [
+            [
+                "c6bafd4f.65201"
+            ]
+        ]
+    },
+    {
+        "id": "9bdcb5fb.b73828",
+        "type": "function",
+        "z": "98918ed6.e64e3",
+        "name": "get graphNodes",
+        "func": "var activeNodes = [];\nvar namedDevices = global.get(\"namedDevices\");\n\ndeviceLinks = msg.payload.links;\ndeviceLinks.forEach(function(link) { \n    var sensorNode = {data: {}};\n    var deviceNode = {data: {}};\n    var linkNode = {data: {}};\n\n    sensorNode.data.id = link.srcSensor;\n    sensorNode.data.name = namedDevices[link.srcSensor] || link.srcSensor;\n    sensorNode.data.isSensor = 1;\n    sensorNode.data.distance = link.distance*-1;\n    activeNodes.push(sensorNode);\n    \n    deviceNode.data.id = link.dstMAC;\n    deviceNode.data.name = namedDevices[link.dstMAC] || link.dstMAC;\n    deviceNode.data.distance = 0;\n    activeNodes.push(deviceNode);\n\n    linkNode.data.id = link.srcSensor + \"<->\" + link.dstMAC;\n    linkNode.data.distance = link.distance*-1;\n    linkNode.data.source = link.srcSensor;\n    linkNode.data.target = link.dstMAC;\n    activeNodes.push(linkNode);\n});\n\nmsg.payload = activeNodes;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 515,
+        "y": 231,
+        "wires": [
+            [
+                "49abde5a.811f3"
+            ]
+        ]
+    },
+    {
+        "id": "49abde5a.811f3",
+        "type": "ui_template",
+        "z": "98918ed6.e64e3",
+        "group": "d784f110.ce8bb",
+        "name": "Device Graph",
+        "order": 1,
+        "width": "10",
+        "height": "10",
+        "format": "<style>\n#cy {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0px;\n    left: 0px;\n}\n</style>\n<script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.4.2/cytoscape.min.js\"></script>\n\n<div id=\"cy\"></div>\n<script>\n(function(scope) {\n    var timer = setInterval(function() { //check that the Morris libs are loaded, if not wait\n        if (!window.cytoscape) return;\n        clearInterval(timer);\n     \n        scope.$watch('msg', function (msg) { //watch for an incoming NR msg\n            if (msg) {\n                myNodes = msg.payload;\n                var cy = cytoscape({\n                    container: document.getElementById('cy'), // container to render in\n                    elements: myNodes,\n                    style: [{\n                                selector: 'node',\n                                style: {\n                                    'background-color': 'green',\n                                    'label': 'data(name)',\n                                    'width': '4',\n                                    'height': '4',\n                                    'font-size': '2px'\n                                }\n                            },\n                            {\n                                selector: 'node[isSensor=1]',\n                                style: {\n                                    'background-color': 'red',\n                                    'label': 'data(name)',\n                                    'width': '2',\n                                    'height': '2',\n                                    'font-size': '2px'\n                                }\n                            },\n                            {\n                                selector: 'edge',\n                                style: {\n                                    'label': 'data(distance)',\n                                    'font-size': '3px',\n                                    'width': 1,\n                                }\n                            }\n                    ],\n                    layout: {\n                        name: 'concentric',\n                        concentric: function( node ){\n                            return node.data.distance;\n                        },\n                        levelWidth: function( nodes ){\n                            return 100;\n                        }\n                    }\n                });\n            }\n        });\n    }, 100); // close out the setInterval \n})(scope);\n</script>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 712.1998901367188,
+        "y": 240.0000762939453,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2eb153e9.4c95cc",
+        "type": "function",
+        "z": "a2c7ad09.6d318",
+        "name": "filter out links older than logDuration",
+        "func": "allLinks = msg.payload;\nsettings = global.get(\"settings\") || [];\neventLog = global.get(\"eventLog\") || [];\nlogWindow = settings.logWindow || 1;\n\nif(!settings.enableLogging)\n    return {payload: []}; // Clear the allLinks array if logging not enabled\n\n\nfreshLinks = allLinks.filter(function(link) {\n    var ONE_HOUR = 60 * 60 * 1000; /* ms */\n    ONE_HOUR = ONE_HOUR / 60; // 1 minute for testing\n    if(((new Date()) - link.lastActiveTime) < (ONE_HOUR * logWindow)) {\n        if(link.channel > 0)\n            return true;\n        else\n            return false;\n    } else {\n        eventLog.push({ts: new Date(), event:\"Purging link: \" + link.dstMAC + \" | \" + link.lastActiveTime});\n        return false;\n    }\n});\n\nglobal.set(\"eventLog\", eventLog);\n\nmsg.payload = freshLinks;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 637.8333511352539,
+        "y": 240.00001859664917,
+        "wires": [
+            [
+                "a35c9483.f633c8"
+            ]
+        ]
+    },
+    {
+        "id": "362e8642.899f8a",
+        "type": "function",
+        "z": "a2c7ad09.6d318",
+        "name": "check for new (untrusted) devices",
+        "func": "var seenDevices = msg.payload.devices || [];\nvar allLinks = global.get(\"allLinks\") || [];\nvar trustedDevices = global.get(\"trustedDevices\") || [];\nvar settings = global.get(\"settings\") || {};\n\ndevices = {};\nallLinks.forEach(function(link) {\n    deviceInfo = {};\n    deviceInfo.MAC = link.dstMAC;\n    devices[link.dstMAC] = deviceInfo;\n});\n\nvar deviceList = '';\nseenDevices.forEach(function(newDevice) {\n    if(!devices[newDevice.MAC] && !trustedDevices[newDevice.MAC])\n        deviceList += newDevice.MAC + \"<br>\";\n});\n\nnotificationMsg = {};\n\nif(deviceList !== '') {\n    msg.payload = (\"New devices detected: <br>\"+deviceList);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 366.8333511352539,
+        "y": 380.00001859664917,
+        "wires": [
+            [
+                "d204d2cf.7593b",
+                "3d0e2a42.0378a6"
+            ]
+        ]
+    },
+    {
+        "id": "1882cae4.cb25a5",
+        "type": "ui_toast",
+        "z": "a2c7ad09.6d318",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "New device detected",
+        "name": "Notify(NewDevice)",
+        "x": 888.8333892822266,
+        "y": 387.00002241134644,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a623ce1.c189e3",
+        "type": "change",
+        "z": "9ea60293.d0c54",
+        "name": "Clear global.realDevices",
+        "rules": [
+            {
+                "t": "set",
+                "p": "realDevices",
+                "pt": "global",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1711,
+        "y": 416,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9be73714.2aa968",
+        "type": "inject",
+        "z": "9ea60293.d0c54",
+        "name": "Reset global vars",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1423.999912261963,
+        "y": 401.99998474121094,
+        "wires": [
+            [
+                "1a623ce1.c189e3",
+                "b27d5668.3dbd88",
+                "a46e6f1c.43c6a",
+                "539b6be3.ac3084"
+            ]
+        ]
+    },
+    {
+        "id": "b27d5668.3dbd88",
+        "type": "change",
+        "z": "9ea60293.d0c54",
+        "name": "Clear global.linksArray",
+        "rules": [
+            {
+                "t": "set",
+                "p": "allLinks",
+                "pt": "global",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1701,
+        "y": 376,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a46e6f1c.43c6a",
+        "type": "change",
+        "z": "9ea60293.d0c54",
+        "name": "Clear global.sensorsArray",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sensorsArray",
+                "pt": "global",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1711,
+        "y": 456,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a5d2af67.dd67c",
+        "type": "change",
+        "z": "9ea60293.d0c54",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "namedDevices",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1703.0000610351562,
+        "y": 578.0000610351562,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "736700e.0e2a9",
+        "type": "inject",
+        "z": "9ea60293.d0c54",
+        "name": "namedDevices",
+        "topic": "",
+        "payload": "{\"1518036\":\"Entry Way\",\"1518039\":\"My room\",\"b8:5d:0a:ae:1e:5f\":\"PhilsPhone\",\"f8:62:14:36:8c:4a\":\"My Phone\",\"48:d6:d5:39:58:14\":\"(chromeCast)\",\"20:df:b9:30:89:f2\":\"Google Home\",\"00:07:a6:09:8e:0a\":\"(myRoomLight)\",\"b0:ca:68:c5:6d:7d\":\"My iPad\",\"88:63:df:c6:c8:ab\":\"My iMac\",\"84:16:f9:87:44:f1\":\"Ryan Desktop\",\"a0:af:bd:82:74:1d\":\"Ryans Laptop\",\"cc:c0:79:47:b4:c9\":\"Ryans Phone\",\"2c:20:0b:17:b5:bb\":\"Sam Phone\",\"a0:99:9b:0c:cf:15\":\"Sam Laptop\",\"18:65:90:cd:fa:a9\":\"Jake Laptop\",\"58:40:4e:66:a6:e8\":\"Jake Phone\",\"74:b5:87:37:1e:e5\":\"Davids Phone\",\"70:4f:57:43:88:f7\":\"WiFI AP 2.4g\",\"70:4f:57:43:88:f6\":\"WiFI AP 5g\",\"dc:41:5f:96:8c:0b\":\"Thomas Phone\",\"a4:77:33:49:fe:34\":\"Chromecast (Keval)\",\"7c:2e:bd:ec:a9:22\":\"Chromecast (Living room)\",\"68:57:2d:44:30:36\":\"Smart Plug\",\"68:57:2d:47:16:74\":\"Smart Plug\",\"68:57:2d:40:33:e1\":\"Smart Plug\",\"98:01:a7:ab:40:b7\":\"TS Macbook\",\"3c:2e:f9:39:03:9c\":\"Kelseys Iphone\",\"80:b0:3d:81:2b:17\":\"Keval iPhone\",\"b8:7b:c5:f0:5a:70\":\"My iPhone\"}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 1442.0000076293945,
+        "y": 553.0000228881836,
+        "wires": [
+            [
+                "a5d2af67.dd67c"
+            ]
+        ]
+    },
+    {
+        "id": "539b6be3.ac3084",
+        "type": "change",
+        "z": "9ea60293.d0c54",
+        "name": "Clear global.trustedDevices",
+        "rules": [
+            {
+                "t": "set",
+                "p": "trustedDevices",
+                "pt": "global",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1721,
+        "y": 336,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1bff412c.1e0f3f",
+        "type": "inject",
+        "z": "9ea60293.d0c54",
+        "name": "trustedDevices",
+        "topic": "",
+        "payload": "{\"b8:5d:0a:ae:1e:5f\":true,\"3c:2e:f9:39:03:9c\":true,\"98:01:a7:ab:40:b7\":true,\"80:b0:3d:81:2b:17\":true,\"b8:7b:c5:f0:5a:70\":true}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 1442.8571472167969,
+        "y": 519.4285888671875,
+        "wires": [
+            [
+                "de8d151.ccd92e8"
+            ]
+        ]
+    },
+    {
+        "id": "de8d151.ccd92e8",
+        "type": "change",
+        "z": "9ea60293.d0c54",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "trustedDevices",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1703.8571472167969,
+        "y": 544.4285888671875,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d438cd2.3e14f4",
+        "type": "inject",
+        "z": "9ea60293.d0c54",
+        "name": "settings",
+        "topic": "",
+        "payload": "{\"enableLogging\":true,\"logWindow\":24,\"triggerAlerts\":false}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 117.99995422363281,
+        "y": 530,
+        "wires": [
+            [
+                "499467b6.66a278",
+                "7eb75d09.693784"
+            ]
+        ]
+    },
+    {
+        "id": "30d4b02.b1f535",
+        "type": "mqtt in",
+        "z": "9ea60293.d0c54",
+        "name": "on ReloadUI",
+        "topic": "Sniffer/#",
+        "qos": "2",
+        "broker": "4ac86962.2b19a8",
+        "x": 106.85714721679688,
+        "y": 221.28573608398438,
+        "wires": [
+            [
+                "b73765e0.4314c8",
+                "1ece76f2.664dd9"
+            ]
+        ]
+    },
+    {
+        "id": "c0ba9384.ce5f6",
+        "type": "mqtt out",
+        "z": "9ea60293.d0c54",
+        "name": "ReloadUI",
+        "topic": "Sniffer/UpdateUI",
+        "qos": "",
+        "retain": "",
+        "broker": "4ac86962.2b19a8",
+        "x": 1377.7301635742188,
+        "y": 170.55558586120605,
+        "wires": []
+    },
+    {
+        "id": "d204d2cf.7593b",
+        "type": "function",
+        "z": "a2c7ad09.6d318",
+        "name": "EventLog(newDevices)",
+        "func": "eventLog = global.get(\"eventLog\") || [];\neventLog.push({ts: new Date(), event: msg.payload});\n\nglobal.set(\"eventLog\", eventLog);\nif(global.get(\"settings\").triggerAlerts) \n    return {payload: msg.payload};\nelse\n    return;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 656.3333511352539,
+        "y": 368.00001859664917,
+        "wires": [
+            [
+                "1882cae4.cb25a5"
+            ]
+        ]
+    },
+    {
+        "id": "7eb75d09.693784",
+        "type": "change",
+        "z": "9ea60293.d0c54",
+        "name": "clear eventLog",
+        "rules": [
+            {
+                "t": "set",
+                "p": "eventLog",
+                "pt": "global",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 382.5,
+        "y": 442,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9aaa2ae0.906fc8",
+        "type": "function",
+        "z": "98918ed6.e64e3",
+        "name": "updateGeo",
+        "func": "var deviceToGeo = msg.payload.SensorID;\nvar nearbyAPs = msg.payload.nearbyAPs || [];\nvar sensors = global.get(\"sensorsArray\") || [];\n\nvar wifiAccessPoints = [];\n\nnearbyAPs.forEach(function(nearbyAP) {\n    var AP = {};\n    AP.macAddress = nearbyAP.MAC;\n    AP.signalStrength = nearbyAP.RSSI;\n    AP.channel = nearbyAP.channel;\n    wifiAccessPoints.push(AP);\n});\n\nif (wifiAccessPoints === [])\n    return;\nelse\n    msg.payload = wifiAccessPoints;\n\nflow.set(\"deviceToGeo\", deviceToGeo)\nreturn msg;\n\n\n/*\nif(wifiAccessPoints.length !== 0) {\n    sensors.find(function(e, i) {\n        if (e.id == deviceToGeo) {\n            if(e.hasOwnProperty(\"geo\") && e.geo.accuracy <= 2000) { \n                wifiAccessPoints = [];\n            } else {// If sensor doesn't already have a geo within 25 meters\n                sensors[i].newGeo = 1;\n                global.set(\"sensorsArray\", sensors);\n            }\n            \n            return true;\n        }\n    });\n}\nif (wifiAccessPoints === [])\n    return;\nelse\n    msg.payload = wifiAccessPoints;\n    \nreturn msg;\n*/",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 267,
+        "y": 681,
+        "wires": [
+            [
+                "717bbf01.c153d"
+            ]
+        ]
+    },
+    {
+        "id": "6b488ac4.684864",
+        "type": "http request",
+        "z": "98918ed6.e64e3",
+        "name": "Geolcation API",
+        "method": "POST",
+        "ret": "obj",
+        "url": "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBfhOiClQtH-PVxUXqL6abcd-Lir1toFw8",
+        "tls": "",
+        "x": 465,
+        "y": 909,
+        "wires": [
+            [
+                "b50cd15e.cac66"
+            ]
+        ]
+    },
+    {
+        "id": "717bbf01.c153d",
+        "type": "switch",
+        "z": "98918ed6.e64e3",
+        "name": "If nearby APs",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 292,
+        "y": 908,
+        "wires": [
+            [
+                "6b488ac4.684864"
+            ]
+        ]
+    },
+    {
+        "id": "b50cd15e.cac66",
+        "type": "function",
+        "z": "98918ed6.e64e3",
+        "name": "updateSensorGeo",
+        "func": "sensors = global.get(\"sensorsArray\") || [];\nsensors = global.get(\"sensorsArray\") || [];\n\nsensors.find(function(sensor, index) {\n    if(flow.get(\"deviceToGeo\") == sensor.id) {\n        flow.set(\"deviceToGeo\", '');\n        \n        if(!sensors[index].geo || sensors[index].geo.accuracy < msg.payload.accuracy) \n            sensors[index].geo = msg.payload;\n        \n        return true;\n    }\n});\n\nmsg.payload = sensors;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 537,
+        "y": 684,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec414a50.804ae8",
+        "type": "comment",
+        "z": "98918ed6.e64e3",
+        "name": "Query Google Location API",
+        "info": "",
+        "x": 387.5,
+        "y": 867,
+        "wires": []
+    },
+    {
+        "id": "8ee3d5af.cde098",
+        "type": "comment",
+        "z": "98918ed6.e64e3",
+        "name": "/api/get endpoints",
+        "info": "links\ndevices\n    isLegit\n    ts\n    sensorID\ngraphNodes\nsensors",
+        "x": 1022,
+        "y": 322,
+        "wires": []
+    },
+    {
+        "id": "d7f7936a.d2843",
+        "type": "comment",
+        "z": "98918ed6.e64e3",
+        "name": "Get Sensors...",
+        "info": "",
+        "x": 1302,
+        "y": 442,
+        "wires": []
+    },
+    {
+        "id": "f895d943.0ad098",
+        "type": "http in",
+        "z": "98918ed6.e64e3",
+        "name": "API /GET Listener (/api/get/:endpoint)",
+        "url": "/api/get/:endpoint",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 682,
+        "y": 362,
+        "wires": [
+            [
+                "d37041f8.50c87"
+            ]
+        ]
+    },
+    {
+        "id": "d37041f8.50c87",
+        "type": "switch",
+        "z": "98918ed6.e64e3",
+        "name": "API (GET) request Handler Switch",
+        "property": "req.params.endpoint",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "links",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "devices",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "graphNodes",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "sensors",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 1032,
+        "y": 362,
+        "wires": [
+            [
+                "9e9af56b.605528"
+            ],
+            [
+                "1957b8aa.60fe17"
+            ],
+            [
+                "97ce31e.5a5d8d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9e9af56b.605528",
+        "type": "function",
+        "z": "98918ed6.e64e3",
+        "name": "Filter / Return Global.LinksArray",
+        "func": "allLinks = global.get(\"linksArray\") || [];\n\nreturnedLinks = allLinks.filter(function(linkToFilter) {\n    if(filterReturnedObjects(msg.req.query, linkToFilter))\n        return false;\n    else\n        return true;\n})\n\nfunction filterReturnedObjects(passedQueryFilters, returnedObj) {\n    var filteredOut = false;\n    \n    if(!Object.keys(passedQueryFilters).length)\n        return filteredOut;\n        \n    Object.keys(passedQueryFilters).map(function(filterParam) {\n        var filterFunctions = {\n            'sensorID': function () {\n                if (passedQueryFilters[filterParam] != returnedObj.srcSensor) \n                    filteredOut = true;\n            },\n            'ts': function () {\n                if (passedQueryFilters[filterParam] > returnedObj.lastActiveTime)\n                    filteredOut = true;\n            },\n            'isLegit': function () {\n                if(passedQueryFilters[filterParam] && (returnedObj.channel == -2))\n                    filteredOut = true;\n            }\n        };\n    \n        filterFunctions[filterParam]();\n    });\n    \n    return filteredOut;\n}\n\nfunction compare(a,b) {\n  if (a.lastActiveTime < b.lastActiveTime)\n    return -1;\n  if (a.lastActiveTime > b.lastActiveTime)\n    return 1;\n  return 0;\n}\n\nmsg.payload = returnedLinks.sort(compare);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1362,
+        "y": 322,
+        "wires": [
+            [
+                "bc1e9785.fcad28"
+            ]
+        ]
+    },
+    {
+        "id": "1957b8aa.60fe17",
+        "type": "function",
+        "z": "98918ed6.e64e3",
+        "name": "Filter / Return Global.legitDevices",
+        "func": "returnedDevices = [];\nallDevices = global.get(\"loggedDevices\") || [];\notherDevices = global.get(\"otherDevices\") || [];\n\nreturnedDevices = allDevices.filter(function(deviceToFilter) {\n    if(filterDevice(msg.req.query, deviceToFilter))\n        return false;\n    else\n        return true;\n})\n\nmsg.payload = returnedDevices;\nreturn msg;\n\nfunction filterDevice(requestParams, device) {\n    if(!Object.getOwnPropertyNames(requestParams).length)\n        return false;\n        \n    Object.keys(requestParams).map(function(key, index) {\n        filteredOut = 0;\n    \n        switch(key) {\n            case 'sensorID':\n                if (requestParams[key] != device.lastSensedBy)\n                    filteredOut = 1;\n                break;\n            \n            case 'ts':\n                if (requestParams[key] > device.lastDiscoveredTime)\n                    filteredOut = 1;\n                break;\n                \n            case 'isLegit':\n                if(requestParams[key] == 1 && (device.channel == -2))\n                    filteredOut = 1;\n                break;\n                \n            default:\n                break;\n        }\n    });\n    \n    if(filteredOut)\n        return true;\n    else\n        return false;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1372,
+        "y": 362,
+        "wires": [
+            [
+                "bc1e9785.fcad28"
+            ]
+        ]
+    },
+    {
+        "id": "97ce31e.5a5d8d",
+        "type": "function",
+        "z": "98918ed6.e64e3",
+        "name": "get activeNodes for Cytoscape graph",
+        "func": "var namedDevices = global.get(\"namedDevices\") || {};\nvar allLinks = global.get(\"allLinks\") || [];\n\nvar linkTimeout = 1; // Links inactive after 5 minutes of silence \nvar ignoreRandomizedMacs = 1;\nvar onlyGraphKnownDevices = 0;\n\n\nnodesToGraph = getActiveNodes(allLinks);\nmsg.payload = nodesToGraph;\nreturn msg;\n\nfunction getActiveNodes(returnedLinks) { // should be updateGraphArrays\n  var activeLinks = [];\n  var activeNodes = []\n\n  activeLinks = returnedLinks.filter(function(link) {\n    if((link.lastActiveTime > new Date(Date.now() - linkTimeout * 60000)) && \n       (ignoreRandomizedMacs || (link.channel != -2)) &&\n       (!onlyGraphKnownDevices || namedDevices.hasOwnProperty(link.dstMAC)) &&\n       (!activeLinks.find(function(e) { return ((Sensor == link.srcSensor) && (e.dstMAC == link.dstMAC));}))) {\n      return true;\n    } else\n      return false;\n  });\n\n  activeLinks.forEach(function(link) { \n    if(!activeNodes.find(function(node) { // If source sensor from link hasn't been added to activeSensors array yet\n      if (node.id == link.dstMAC) // If activeNodes array has object with matching node ID\n        return true;\n    })) { // If activeNodes array did not have matching nodeID yet, then make newNode object and add to activeNodess\n      var newNode = {};\n      newNode.data = {};\n      newNode.data.id = link.dstMAC;\n      newNode.data.name = namedDevices[link.dstMAC] || '';\n      newNode.data.deviceCount = -1;\n      activeNodes.push(newNode);\n    } // Add all device MACs in destions for \"activeLinks\" to activeNodes array\n    \n\n    if(!activeNodes.find(function(node, index) { // If source sensor from link hasn't been added to activeSensors array yet\n      if (node.id == link.srcSensor) { // If activeSensors array has object with matching sensor ID\n        activeNodes[index].data.deviceCount++; // Increment number of nearby devices for that sensor and return true (aka sensor already in \"activeSensors\")\n        return true;\n      }\n    })) { // If activeSensors array did not have matching sensorID yet, then make newSensor object and add to activeSensors\n      var newSensor = {};\n      newSensor.data = {};\n      newSensor.data.id = link.srcSensor;\n      newSensor.data.name = namedDevices[link.srcSensor] || '';\n      newSensor.data.deviceCount = 0;\n      newSensor.data.isSensor = 1;\n      activeNodes.push(newSensor);\n    }\n\n    if(!activeNodes.find(function(node) { // If source sensor from link hasn't been added to activeSensors array yet\n      if (node.id == link.srcSensor +\"-->\" + link.dstMAC) // If activeNodes array has object for link from sensorID to dstMAC\n        return true // Already recorded this Link\n    })) { // If activeNodes array did not have matching link yet, then make newSensor object and add to activeSensors\n      var newLink = {};\n      newLink.data = {};\n      newLink.data.id = link.srcSensor +\"-->\" + link.dstMAC;\n      newLink.data.distance = link.distance*-1;\n      newLink.data.source = link.srcSensor;\n      newLink.data.target = link.dstMAC;\n      activeNodes.push(newLink);\n    }\n  });\n  \n  return activeNodes;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1382,
+        "y": 402,
+        "wires": [
+            [
+                "bc1e9785.fcad28"
+            ]
+        ]
+    },
+    {
+        "id": "bc1e9785.fcad28",
+        "type": "http response",
+        "z": "98918ed6.e64e3",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1781,
+        "y": 386,
+        "wires": []
+    },
+    {
+        "id": "3d0e2a42.0378a6",
+        "type": "switch",
+        "z": "a2c7ad09.6d318",
+        "name": "",
+        "property": "settings.triggerAlerts",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 594.833381652832,
+        "y": 404.00004720687866,
+        "wires": [
+            [
+                "1882cae4.cb25a5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "662b9ab.e056664",
+        "type": "ui_list",
+        "z": "98918ed6.e64e3",
+        "group": "ef4a7018.d6a6a",
+        "name": "Alert List",
+        "order": 5,
+        "width": "2",
+        "height": "2",
+        "lineType": "two",
+        "actionType": "click",
+        "allowHTML": true,
+        "x": 916,
+        "y": 748,
+        "wires": [
+            [
+                "d39bef54.90a88"
+            ]
+        ]
+    },
+    {
+        "id": "d39bef54.90a88",
+        "type": "function",
+        "z": "98918ed6.e64e3",
+        "name": "parse clicked alert",
+        "func": "return [{payload: msg.payload.title}, {payload: msg.payload.description}];",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 1084.1857299804688,
+        "y": 745.9429321289062,
+        "wires": [
+            [
+                "b0ddb2ca.98404"
+            ],
+            [
+                "2c5b2c4.04f7ed4"
+            ]
+        ]
+    },
+    {
+        "id": "b0ddb2ca.98404",
+        "type": "ui_text_input",
+        "z": "98918ed6.e64e3",
+        "name": "alertName",
+        "label": "Name",
+        "tooltip": "",
+        "group": "ef4a7018.d6a6a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "x": 1461.1857299804688,
+        "y": 575.9429321289062,
+        "wires": [
+            [
+                "af03574.98cfda8"
+            ]
+        ]
+    },
+    {
+        "id": "2c5b2c4.04f7ed4",
+        "type": "ui_text_input",
+        "z": "98918ed6.e64e3",
+        "name": "alertTarget",
+        "label": "Phone / Email",
+        "tooltip": "Where should this alert be delivered?",
+        "group": "ef4a7018.d6a6a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "x": 1453.6857299804688,
+        "y": 765.9429321289062,
+        "wires": [
+            [
+                "8f35a868.b4c778"
+            ]
+        ]
+    },
+    {
+        "id": "b1e43e08.46e9c",
+        "type": "ui_button",
+        "z": "98918ed6.e64e3",
+        "name": "update currentAlert",
+        "group": "ef4a7018.d6a6a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Add / Update",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "\"\"",
+        "payloadType": "json",
+        "topic": "",
+        "x": 1547.6857299804688,
+        "y": 677.9429321289062,
+        "wires": [
+            [
+                "f9d782f8.2ae2c",
+                "2c5b2c4.04f7ed4",
+                "b0ddb2ca.98404"
+            ]
+        ]
+    },
+    {
+        "id": "af03574.98cfda8",
+        "type": "change",
+        "z": "98918ed6.e64e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "alertName",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1620.1857299804688,
+        "y": 574.9429321289062,
+        "wires": [
+            [
+                "b1e43e08.46e9c"
+            ]
+        ]
+    },
+    {
+        "id": "8f35a868.b4c778",
+        "type": "change",
+        "z": "98918ed6.e64e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "alertTarget",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1612.6857299804688,
+        "y": 764.9429321289062,
+        "wires": [
+            [
+                "b1e43e08.46e9c"
+            ]
+        ]
+    },
+    {
+        "id": "f9d782f8.2ae2c",
+        "type": "function",
+        "z": "98918ed6.e64e3",
+        "name": "add Alert",
+        "func": "alerts = global.get(\"alerts\") || {};\n\nalerts[flow.get(\"alertName\")] = flow.get(\"alertTarget\");\n\nglobal.set(\"alerts\", alerts);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2085.1857299804688,
+        "y": 704.9429321289062,
+        "wires": [
+            [
+                "8e90b5f1.56b798"
+            ]
+        ]
+    },
+    {
+        "id": "8e90b5f1.56b798",
+        "type": "function",
+        "z": "98918ed6.e64e3",
+        "name": "Get alert list",
+        "func": "alerts = global.get(\"alerts\") || {};\n\nmsg.payload = [];\nfor(var alert in alerts) {\n    listItem = {}\n    listItem.title = alert;\n    listItem.description = alerts[alert];\n    msg.payload.push(listItem);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1556.9999389648438,
+        "y": 859.4000854492188,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18a70aa3.643915",
+        "type": "inject",
+        "z": "98918ed6.e64e3",
+        "name": "SMS server IP",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "x": 112,
+        "y": 72,
+        "wires": [
+            [
+                "c72bdbb2.250098"
+            ]
+        ]
+    },
+    {
+        "id": "c72bdbb2.250098",
+        "type": "http request",
+        "z": "98918ed6.e64e3",
+        "name": "Get public IP",
+        "method": "GET",
+        "ret": "txt",
+        "url": "http://icanhazip.com",
+        "tls": "",
+        "x": 302.4444580078125,
+        "y": 50.33334159851074,
+        "wires": [
+            [
+                "809d9abe.a1ab18"
+            ]
+        ]
+    },
+    {
+        "id": "809d9abe.a1ab18",
+        "type": "twilio out",
+        "z": "98918ed6.e64e3",
+        "twilio": "21748551.68486a",
+        "twilioType": "sms",
+        "url": "",
+        "number": "18023550670",
+        "name": "SMS my phone",
+        "x": 486.44444274902344,
+        "y": 76.33333492279053,
+        "wires": []
+    },
+    {
+        "id": "2cb7cf34.9c818",
+        "type": "http in",
+        "z": "1fad646f.2a242c",
+        "name": "Disarm for alerts for X time",
+        "url": "/api/disarm",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 172,
+        "y": 94,
+        "wires": [
+            [
+                "b63874d0.ab5e08"
+            ]
+        ]
+    },
+    {
+        "id": "d12f342.8fb7cc8",
+        "type": "twilio out",
+        "z": "1fad646f.2a242c",
+        "twilio": "21748551.68486a",
+        "twilioType": "sms",
+        "url": "",
+        "number": "",
+        "name": "Alert(Disarmed)",
+        "x": 400.0000114440918,
+        "y": 154.00000190734863,
+        "wires": []
+    },
+    {
+        "id": "d31a23e5.ab046",
+        "type": "ui_ui_control",
+        "z": "1fad646f.2a242c",
+        "name": "Notify(Disarmed)",
+        "x": 426,
+        "y": 124,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b63874d0.ab5e08",
+        "type": "function",
+        "z": "1fad646f.2a242c",
+        "name": "EventLog(Disarmed)",
+        "func": "log = global.get(\"eventLog\") || [];\nlog.push({ts: new Date(), event:\"Alerts disabled for X time by <Phone #>\"});\n\nglobal.set(\"eventLog\", log);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 428,
+        "y": 72,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59af8495.8e2ffc",
+        "type": "mqtt out",
+        "z": "a2c7ad09.6d318",
+        "name": "Public Broker",
+        "topic": "Sniffer/",
+        "qos": "",
+        "retain": "",
+        "broker": "419a7394.d25b4c",
+        "x": 616.1000061035156,
+        "y": 31.00000762939453,
+        "wires": []
+    },
+    {
+        "id": "f56d5091.45f1f",
+        "type": "debug",
+        "z": "a2c7ad09.6d318",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 549.1000213623047,
+        "y": 166.00001335144043,
+        "wires": []
+    },
+    {
+        "id": "6b99359f.1694bc",
+        "type": "http in",
+        "z": "9ea60293.d0c54",
+        "name": "",
+        "url": "/events",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 99,
+        "y": 699.5999755859375,
+        "wires": [
+            [
+                "5f5d2403.8aee2c"
+            ]
+        ]
+    },
+    {
+        "id": "5f5d2403.8aee2c",
+        "type": "function",
+        "z": "9ea60293.d0c54",
+        "name": "Get EventLog",
+        "func": "eventLog = global.get(\"eventLog\") || [];\nmsg.payload = eventLog;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 301.5,
+        "y": 659.5999822616577,
+        "wires": [
+            [
+                "1d53a654.1207ca"
+            ]
+        ]
+    },
+    {
+        "id": "1d53a654.1207ca",
+        "type": "template",
+        "z": "9ea60293.d0c54",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Event Log:<br>\n{{#payload}}\n    {{event}}<br>\n    <b>{{ts}}</b><br>\n    <hr><br>\n{{/payload}}",
+        "output": "str",
+        "x": 480.00000762939453,
+        "y": 700.599983215332,
+        "wires": [
+            [
+                "bd400bfe.e01148"
+            ]
+        ]
+    },
+    {
+        "id": "bd400bfe.e01148",
+        "type": "http response",
+        "z": "9ea60293.d0c54",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 624.0000076293945,
+        "y": 700.5999827384949,
+        "wires": []
+    },
+    {
+        "id": "1b379b52.4ec755",
+        "type": "json",
+        "z": "a2c7ad09.6d318",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 349.50000381469727,
+        "y": 152.66667366027832,
+        "wires": [
+            [
+                "f56d5091.45f1f"
+            ]
+        ]
+    }
+]

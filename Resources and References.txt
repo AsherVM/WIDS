@@ -1,0 +1,26 @@
+https://www.kismetwireless.net/docs/readme/packages/
+https://github.com/brannondorsey/wifi-cracking/blob/master/appendix.md
+https://www.shellvoide.com/wifi/how-to-crack-wpa2-password-without-handshake-newly-discovered-method/
+https://routerkeygen.github.io/
+
+
+
+https://github.com/SensorsIot/Wi-Fi-Sniffer-as-a-Human-detector 
+		Base for program
+
+		https://github.com/xdavidhu/probeSniffer -- 214 *s (1yo)
+	Promising framework for capturing, logging, filtering, labeling mac addresses
+	> Downloading Raspbian for demo in VM
+
+https://github.com/kalanda/esp8266-sniffer -- 198 *s (1wo)
+	Actively developed PoC for scanning on small SoC ESP8266 board
+
+https://www.youtube.com/watch?v=fmhjtzmLrg8
+	Very good overview and summery of capstone concept using ESP8266 SoC rather than Pi
+		ESP8266 Dev board: https://learn.sparkfun.com/tutorials/esp8266-thing-development-board-hookup-guide
+	Included code (including purging and known devices): 
+		https://github.com/SensorsIot/Wi-Fi-Sniffer-as-a-Human-detector
+
+
+https://github.com/SensorsIot/Wi-Fi-Sniffer-as-a-Human-detector
+https://www.hackster.io/p99will/esp32-wifi-mac-scanner-sniffer-promiscuous-4c12f4

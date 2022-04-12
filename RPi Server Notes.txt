@@ -1,0 +1,50 @@
+﻿RPi Server
+   * root : UpdateThis!
+   *    * 192.168.0.132 (Eth01 - DHCP)
+   * 192.168.42.1/24 (Wlan01)
+      * WIDS-Net : UpdateThis!
+
+   * http:1880 (Node-RED)
+   * https:10000 (Webmin)
+   * XMTT:1883 (Misquitto)
+   * FTP:21 (ProFTPd — dietpi : UpdateThis!)
+
+
+RPi 
+        DietPi OS
+                https://dietpi.com/phpbb/viewtopic.php?t=9
+        Node-RED (IoT)
+        Mosquitto (MQTT)
+        Hostapd 
+                https://github.com/MichaIng/DietPi/blob/master/dietpi.txt (config)
+                https://misapuntesde.com/post.php?id=726 (Tutorial referenced)
+        WiFi configuration (Unneeded with current wireless AP setup)
+                https://imti.co/iot-wifi/
+
+
+https://tech.scargill.net/the-script/ — Interesting install script, overkill for project
+
+
+
+
+   1. Setup and configure RPi Server
+   1. Burn DietPi iso* to MicroSD (DietPi_AutoInstall.txt > dietpi.txt)
+   2. Join WIDS-Net wireless network
+   3. Browse to Node-RED on RPi and “import” NodeRED-WIDS_Config.txt content
+
+
+
+
+ESP-12E
+        https://github.com/techiesms/Geolocation — Geolocation code
+
+
+
+
+To Do
+
+
+Combobox list with all devices/Trusted Devices/Blacklisted Devices/Other devices
+   * ARP Scan network via ESP wired to Pi or via ethernet
+   * Wire ESP to Pi for ARP scanning nearby wifi open/authenticated networks
+   * Make Pi act as both AP and client?
